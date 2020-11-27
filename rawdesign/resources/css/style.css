@@ -78,6 +78,9 @@ nav button {
     padding: 5px 0px;
     margin-left: 30px;
     border-radius: 3px;
+    font-size: 15px;
+    font-family: 'Barlow Condensed', sans-serif;
+
 }
 
 .btn {
