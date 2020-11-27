@@ -2,16 +2,16 @@
 
 <p align="center">
   <a aria-label="Made with React" href="https://reactjs.org/">
-    <img alt="" src="http://img.shields.io/badge/Made%20with-React-61DAFB?style=for-the-badge&logo=react">
+    <img alt="" src="http://img.shields.io/badge/Made%20with-React-61DAFB?style=for-the-badge&logo=react&labelColor=000000">
   </a>
   <a aria-label="License" href="https://github.com/dsckgec/dsck-website/blobl/master/license.md">
-    <img alt="" src="http://img.shields.io/badge/LICENSE-MIT-85EA2D?style=for-the-badge">
+    <img alt="" src="http://img.shields.io/badge/LICENSE-MIT-85EA2D?style=for-the-badge&labelColor=000000">
   </a>
   <a aria-label="Join the community on Discord" href="https://dsck.ml/discord">
     <img alt="" src="https://img.shields.io/badge/Join%20the%20community-blueviolet.svg?style=for-the-badge&logo=Discord&labelColor=000000&logoWidth=20&logoColor=FFFFFF">
   </a>
   <a aria-label="Contributors" href="https://github.com/dsckgec/dsck-website/graphs/contributors">
-    <img alt="" src="https://img.shields.io/github/contributors/dsckgec/dsck-website?color=EA4C89&style=for-the-badge">
+    <img alt="" src="https://img.shields.io/github/contributors/dsckgec/dsck-website?color=EA4C89&style=for-the-badge&labelColor=000000">
   </a>
   
 </p>
