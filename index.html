@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Student Clubs | KGEC</title>
+
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/light.css" title="Light">
+    <link rel="stylesheet" type="text/css" href="resources/css/dark.css" title="Dark">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet" >
+
+</head>
+<body>
+
+    <!-- SIDE NAV -->
+    <nav>
+        <div class="side-nav">
+            <div class="wrapper logo">
+                <div class="logo-img"></div>
+                <div class="nav-text">DSC KGEC</div>
+            </div>
+
+            <div class="wrapper nav-start">
+                <button type="button" >
+                    <div class="active btn">
+                        <ion-icon name="person"></ion-icon>
+                    </div>
+                </button>
+                <div class="nav-text">Home</div>
+            </div>
+    
+            <div class="wrapper">
+                <button type="button">
+                    <div class="btn">
+                        <ion-icon name="bookmark-outline"></ion-icon>
+                    </div>
+                </button>
+                <div class="nav-text">Events</div>
+            </div>
+
+            <div class="wrapper">
+                <button type="button" >
+                    <div class="btn">
+                        <ion-icon name="git-merge-outline"></ion-icon>
+                    </div>
+                </button>
+                <div class="nav-text">Projects</div>
+            </div>
+    
+            <div class="wrapper">
+                <button type="button">
+                    <div class="btn">
+                        <ion-icon name="paper-plane-outline"></ion-icon>
+                    </div>
+                </button>
+                <div class="nav-text">Join us</div>
+            </div>
+
+            <div class="buttons">
+                <div class="wrapper">
+                    <button type="button" onclick="switch_style('Light');return false" name="Theme" value="Light Theme">
+                        <div class="light btn">
+                            <ion-icon name="sunny"></ion-icon>
+                        </div>
+                    </button>
+                    <div class="nav-text">Light Mode</div>
+                </div>
+        
+                <div class="wrapper">
+                    <button type="button" onclick="switch_style('Dark');return false" name="Theme" value="Dark Theme">
+                        <div class="dark btn">
+                            <ion-icon name="moon"></ion-icon>
+                        </div>
+                    </button>
+                    <div class="nav-text">Dark Mode</div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <script src="./resources/js/script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+body {
+    background-color: #FFF;
+    color: #6C7D8B;
+}
+
+nav {
+    background:#FFF;
+    border-right: 1px solid #e4e4ec;
+}
+
+.side-nav {
+    background-color: #F8F8FA;
+    border-right: 1px solid #e4e4ec;
+}
+
+.btn {
+    color: #6C7D8B;
+    background-color: #F8F8FA;
+}
+
+.active, .light {
+    font-size: 18px;
+    color: #FFF;
+    background-color: #4285F4;
+}
+
+nav .buttons {
+    border-top: 1px solid #e4e4ec;
+}
+
+.logo-img {
+    background-image: url('../images/logo-dsc.png');
+    background-size: cover;
+    background-position: center;
+}
