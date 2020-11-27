@@ -11,9 +11,9 @@
     <img alt="" src="https://img.shields.io/badge/Join%20the%20community-blueviolet.svg?style=for-the-badge&logo=Discord&labelColor=000000&logoWidth=20&logoColor=FFFFFF">
   </a>
   <a aria-label="Contributors" href="https://github.com/dsckgec/dsck-website/graphs/contributors">
-    <img alt="" src="https://img.shields.io/badge/Join%20the%20community-blueviolet.svg?style=for-the-badge&logo=Discord&labelColor=000000&logoWidth=20&logoColor=FFFFFF">
+    <img alt="" src="https://img.shields.io/github/contributors/dsckgec/dsck-website?color=EA4C89&style=for-the-badge">
   </a>
-  https://img.shields.io/github/contributors/dsckgec/dsck-website?color=EA4C89&style=for-the-badge
+  
 </p>
 
 ## Technologies used
