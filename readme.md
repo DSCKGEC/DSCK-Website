@@ -49,3 +49,6 @@ React for frontend, Firebase for backend
 <a href="https://github.com/singhayushh">
   <img src="https://avatars1.githubusercontent.com/u/52620158?s=50&u=48086396cbc747499d58e1617eb826576d2a6010">
 </a>
+<a href="https://github.com/adrishyantee">
+  <img src="https://avatars2.githubusercontent.com/u/73780844?s=50&u=779057efe6cab4bb5f369c008695bce833ebdf88">
+</a>
