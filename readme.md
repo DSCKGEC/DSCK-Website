@@ -42,3 +42,10 @@ React for frontend, Firebase for backend
 4. Send a Pull Request! - [Learn How](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)
 
 ## Contributors
+
+<a href="https://github.com/akm15machine">
+  <img src="https://avatars1.githubusercontent.com/u/55695557?s=50&u=b9404e24b221842b970a2fc50b7730eace17a3cb" style="border-radius:50%">
+</a>
+<a href="https://github.com/singhayushh">
+  <img src="https://avatars1.githubusercontent.com/u/52620158?s=50&u=48086396cbc747499d58e1617eb826576d2a6010" style="border-radius:50%">
+</a>
