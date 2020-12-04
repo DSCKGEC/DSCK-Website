@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="resources/css/light.css" title="Light">
     <link rel="stylesheet" type="text/css" href="resources/css/dark.css" title="Dark">
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
 
 </head>
 
@@ -63,26 +63,26 @@
             <div class="buttons">
                 <div class="wrapper">
                     <button type="button" onclick="toggleStyle() ;return false " name="Theme " value="Theme ">
-                        <div class="btn ">
-                            <!--ion-icon name="sunny "></ion-icon-->
-                            <img id = "themeEmoji" src = "resources/images/Theme-btn-emojis/new-moon-face-google.png" width="100%"/>
+                        <div class="btn" id=theme-btn>
+                            <ion-icon name="contrast-outline"></ion-icon>
                         </div>
                     </button>
-                    <div class="nav-text ">🌚 || 🌝</div>
+                    <div class="nav-text">Toggle Theme</div>
                 </div>
-
-                <!--div class="wrapper ">
-                    <button type="button " onclick="switch_style( 'Dark');return false " name="Theme " value="Dark Theme ">
-                        <div class="dark btn ">
-                            <ion-icon name="moon "></ion-icon>
-                        </div>
-                    </button>
-                    <div class="nav-text ">Dark Mode</div>
-                </div-->
-
             </div>
         </div>
     </nav>
+
+    <header>
+        <img src="./resources/images/logo_main.png" alt="" id="logo-main">
+        <div class="content">
+            <h1>Developer Student Clubs</h1>
+            <h2>Kalyani Government Engineering College</h2>
+            <h3>
+                Developer Student Clubs are university based community groups for students interested in Google developer technologies. Students from all undergraduate or graduate programs with an interest in growing as a developer are welcome. By joining a DSC, students grow their knowledge in a peer-to-peer learning environment and build solutions for local businesses and their community.
+            </h3>
+        </div>
+    </header>
 
     <script src="./resources/js/script.js "></script>
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js "></script>

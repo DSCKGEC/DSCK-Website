@@ -14,6 +14,4 @@
 - Darker: #F8F8FA
 
 #### Dark Theme
-- Base: #181828
-- Lighter: #232333
-- Lightest: #2A2F3A
+- Base: #282A36

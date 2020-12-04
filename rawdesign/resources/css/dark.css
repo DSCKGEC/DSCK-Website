@@ -1,21 +1,21 @@
 body {
-    background-color: #232333;
-    color: #d2d2e4;
+    background-color: #282A36;
+    color: #fff;
 }
 
 nav {
-    background: #232333;
-    border-right: 1px solid #3c3c52;
+    background: #20222b;
+    border-right: 1px solid #3e4046;
 }
 
 .side-nav {
-    background-color: #181828;
-    border-right: 1px solid #3c3c52;
+    background-color: #20222b;
+    border-right: 1px solid #3e4046;
 }
 
 .btn {
-    color: #d2d2e4;
-    background-color: #181828;
+    color: #dfdedb;
+    background-color: #20222b;
 }
 
 .active,
@@ -26,11 +26,22 @@ nav {
 }
 
 nav .buttons {
-    border-top: 1px solid #3c3c52;
+    border-top: 1px solid #3e4046;
 }
 
 .logo-img {
     background-image: url('../images/logo-black.png');
     background-size: cover;
     background-position: center;
+}
+
+header {
+    background-image: url('../images/dark-header-background.png');
+}
+
+#logo-main {
+    height: 60px;
+    position: absolute;
+    top: 45px;
+    left: 120px;
 }

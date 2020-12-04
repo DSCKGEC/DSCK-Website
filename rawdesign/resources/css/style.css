@@ -11,7 +11,7 @@ body {
     min-height: 650px;
     font-size: 18px;
     font-weight: 400;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 nav {
@@ -22,7 +22,7 @@ nav {
     top: 0;
     left: 0;
     overflow: hidden;
-    position: absolute;
+    position: fixed;
     -webkit-transition: width .05s linear;
     transition: width .05s linear;
     -webkit-transform: translateZ(0) scale(1, 1);
@@ -106,4 +106,46 @@ nav button {
 
 .nav-start {
     margin-top: 60px !important;
+}
+
+header {
+    min-height: 676px;
+    background-image: url('../images/header-background.png');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-main {
+    height: 150px;
+    position: absolute;
+    top: 0px;
+    left: 80px;
+}
+
+.content {
+    text-align: center;
+    max-width: 1170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content h1 {
+    font-size: 46px;
+    line-height: 1.2;
+    padding: 10px 50px;
+}
+
+.content h3 {
+    line-height: 28px;
+    padding: 30px 20px 50px 20px;
+    font-size: 20px !important;
+    text-transform: none !important;
+    font-weight: normal !important;
 }
