@@ -4,15 +4,17 @@ var style_cookie_name = "style";
 var style_cookie_duration = 30;
 var style_domain = "dsckgec.ml";
 
-var style_state = style_cookie_name
+var style_state = 'Light'
 
 function toggleStyle() {
     if (style_state == 'Light') {
         switch_style('Dark')
         style_state = 'Dark'
+        document.getElementById("themeEmoji").src = "resources/images/Theme-btn-emojis/full-moon-face-google.png"
     } else {
         switch_style('Light')
         style_state = 'Light'
+        document.getElementById("themeEmoji").src = "resources/images/Theme-btn-emojis/new-moon-face-google.png"
     }
 }
 // *** END OF CUSTOMISABLE SECTION ***

@@ -4,7 +4,7 @@ body {
 }
 
 nav {
-    background:#232333;
+    background: #232333;
     border-right: 1px solid #3c3c52;
 }
 
@@ -18,7 +18,8 @@ nav {
     background-color: #181828;
 }
 
-.active, .dark {
+.active,
+.dark {
     font-size: 18px;
     color: #000;
     background-color: #4285F4;

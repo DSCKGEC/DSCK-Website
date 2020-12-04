@@ -9,7 +9,7 @@ body {
     height: 100%;
     width: 100%;
     min-height: 650px;
-    font-size: 13px;
+    font-size: 18px;
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
 }
@@ -92,9 +92,9 @@ nav button {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 35px;
-    width: 35px;
-    border-radius: 6px;
+    height: 34px;
+    width: 34px;
+    border-radius: 17px;
 }
 
 .logo-img {
