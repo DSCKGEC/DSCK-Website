@@ -36,6 +36,7 @@ nav .buttons {
 }
 
 header {
+    background-color: #20222b;
     background-image: url('../images/dark-header-background.png');
 }
 
@@ -44,4 +45,16 @@ header {
     position: absolute;
     top: 45px;
     left: 120px;
+}
+
+.button {
+    box-shadow: 0 14px 26px -12px rgba(0, 0, 0, 0.014) 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+#about {
+    background-color: #282A36;
+}
+
+.sub-text {
+    color: #56d899;
 }

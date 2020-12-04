@@ -14,7 +14,7 @@ function toggleStyle() {
     } else {
         switch_style('Light')
         style_state = 'Light';
-        document.getElementById("logo-main").src = "./resources/images/logo-main.png";
+        document.getElementById("logo-main").src = "./resources/images/logo_main.png";
     }
 }
 // *** END OF CUSTOMISABLE SECTION ***
