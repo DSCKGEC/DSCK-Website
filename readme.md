@@ -38,7 +38,7 @@ React for frontend, Firebase for backend
 
 1. Fork the Repository - [Learn How](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo)
 2. Clone the project to your system - [Learn How](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
-3. Open and codebase and make all your desired changes
+3. Make all your desired changes to the code.
 4. Send a Pull Request! - [Learn How](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)
 
 ## Contributors
