@@ -73,9 +73,9 @@ function get_cookie(cookie_name) {
 }
 const typedTextSpan = document.querySelector(".typed-text");
 const text="Kalyani Government Engineering College"
-const typingDelay = 75;
-const TextDelay = 200;
-let textArrayIndex = 0;
+const typingDelay = 120;
+const erasingDelay = 100;
+const TextDelay = 2000;
 let charIndex = 0;
 
 function type()
@@ -85,7 +85,24 @@ function type()
         charIndex++;
         setTimeout(type, typingDelay);
     }
+    else
+    {
+        setTimeout(erase, erasingDelay+TextDelay);
+    }
+}
+function erase()
+{
+    if(charIndex>0)
+    {
+        typedTextSpan.textContent = text.substring(0,charIndex-1);
+        charIndex--;
+        setTimeout(erase, erasingDelay);     
+    }
+    else
+    {
+        setTimeout(type, typingDelay+TextDelay);
+    }    
 }
 document.addEventListener("DOMContentLoaded", function() {
-    setTimeout(type, TextDelay + 250);
+    setTimeout(type, 0);
 });
