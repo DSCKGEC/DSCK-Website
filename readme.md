@@ -41,6 +41,15 @@ React for frontend, Firebase for backend
 3. Make all your desired changes to the code.
 4. Send a Pull Request! - [Learn How](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)
 
+**To update the forked repo with the master one:**
+```git
+git remote add upstream https://github.com/DSCKGEC/DSCK-Website.git
+git fetch upstream
+git rebase upstream/main
+git pull origin main     (Grabs online updates and merges them with local work)
+git pull
+```
+
 ## Contributors
 
 <a href="https://github.com/akm15machine">
