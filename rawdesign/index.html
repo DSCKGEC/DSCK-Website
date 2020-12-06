@@ -13,10 +13,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@578&display=swap" rel="stylesheet">
 <!--title icon--><link rel="icon" href="resources/images/logo-dsc.png" type="image/x-icon">
+    <link rel="stylesheet" href="resources/css/paricales.css">
 </head>
 
-<body>
-
+<body onLoad="draw()">
+  <canvas id="nokey" style="position:absolute;left:10;top:10"></canvas>
+    <div id="canvas-wrap" style="position:absolute;left:20;top:20">
     <!-- SIDE NAV -->
     <nav>
         <div class="side-nav">
@@ -140,7 +142,8 @@
                 </div>
         </div>
     </section>
-
+  </div>
+<script src="./resources/js/particale.js" charset="utf-8"></script>
     <script src="./resources/js/script.js "></script>
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js "></script>
 </body>

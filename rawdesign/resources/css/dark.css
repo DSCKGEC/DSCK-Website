@@ -37,7 +37,7 @@ nav .buttons {
 
 header {
     background-color: #20222b;
-    background-image: url('../images/dark-header-background.png');
+    /*background-image: url('../images/dark-header-background.png');*/
 }
 
 #logo-main {
