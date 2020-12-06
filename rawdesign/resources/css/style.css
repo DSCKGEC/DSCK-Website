@@ -96,15 +96,14 @@ nav {
     left: 0;
     overflow: hidden;
     position: fixed;
-    -webkit-transition: width .05s linear;
-    transition: width .05s linear;
+    -webkit-transition: width 0.5s ease;
+    transition: width 0.5s ease;
     -webkit-transform: translateZ(0) scale(1, 1);
     transform: translateZ(0) scale(1, 1);
 }
 
 nav:hover {
     width: 250px;
-    overflow: visible;
 }
 
 .side-nav {
@@ -175,9 +174,10 @@ nav button {
 header {
     min-height: 676px;
     background-image: url('../images/header-background.png');
-    background-position: top;
+    background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment:fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
