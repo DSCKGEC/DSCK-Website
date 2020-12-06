@@ -14,6 +14,23 @@ body {
     font-family: 'Mulish', sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+::-webkit-scrollbar-track {
+    background: repeating-linear-gradient(rgb(255, 87, 87), rgb(88, 88, 230), rgb(76, 228, 76),rgb(241, 241, 88));
+  }
+::-webkit-scrollbar-thumb {
+    background:#484849;
+    border-radius: 10px;
+  }
+::-webkit-scrollbar-thumb:hover {
+    background:  rgb(133, 132, 132);
+  }
+::-webkit-scrollbar-thumb:active {
+    background:  rgb(133, 132, 132);
+  }
+
 a, a:active, a:hover, a:visited {
     text-decoration: none;
 }
@@ -96,29 +113,29 @@ nav {
     left: 0;
     overflow: hidden;
     position: fixed;
-    -webkit-transition: width .05s linear;
-    transition: width .05s linear;
+    -webkit-transition: width 0.5s ease;
+    transition: width 0.5s ease;
     -webkit-transform: translateZ(0) scale(1, 1);
     transform: translateZ(0) scale(1, 1);
 }
 
 nav:hover {
-    width: 250px;
-    overflow: visible;
+    width: 230px;
 }
 
 .side-nav {
+    list-style: none;
     height: 100%;
     width: 60px;
     overflow: visible;
     padding: 30px 0px;
-    display: flex;
+    display: table;
     flex-direction: column;
     transition: ease .5s delay-overflow;
 }
 
 .side-nav:hover {
-    transition: ease .5s;
+    transition: ease 300ms;
 }
 
 nav .buttons {
@@ -142,7 +159,7 @@ nav button {
     background: none;
     color: inherit;
     border: none;
-    padding: 0;
+    padding: 5px;
     font: inherit;
     cursor: pointer;
     outline: inherit;
@@ -155,15 +172,22 @@ nav button {
     width: 140px;
     line-height: 24px;
     padding: 5px 0px;
-    margin-left: 30px;
+    margin-left: 8px;
     border-radius: 3px;
 }
+
 
 .logo-img {
     width: 40px;
     height: 40px;
     margin-left: 10px;
     margin-right: 10px;
+    transform: rotate(0deg);
+    transition: 400ms;
+}
+
+nav:hover .logo-img {
+    transform: rotate(-180deg);
 }
 
 .nav-start {
@@ -173,11 +197,12 @@ nav button {
 /*  HEADER  */
 
 header {
-    min-height: 676px;
+    min-height: 700px;
     background-image: url('../images/header-background.png');
-    background-position: top;
+    background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
