@@ -50,6 +50,19 @@ nav .buttons {
     background-position: center;
 }
 
+header {
+    min-height: 700px;
+    background-image: url('../images/dark-header-background.png');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #logo-main {
     height: 60px;
     position: absolute;
