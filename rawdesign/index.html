@@ -12,11 +12,10 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@578&display=swap" rel="stylesheet">
-<!--title icon--><link rel="icon" href="resources/images/logo-dsc.png" type="image/x-icon">
+    <!--title icon--><link rel="icon" href="resources/images/logo-dsc.png" type="image/x-icon">
 </head>
 
 <body>
-
     <!-- SIDE NAV -->
     <nav>
         <div class="side-nav">
@@ -73,13 +72,15 @@
             </div>
         </div>
     </nav>
-
     <header>
-        <div class="content">
+      <canvas id="nokey" style="position:absolute;left:10;top:10"></canvas>
+        <div id="canvas-wrap" style="position:absolute;left:20;top:20">
+          <div class="content">
             <h1>Developer Student Clubs</h1>
             <h2><span class="typed-text"></span></h2>
             <a href="https://dsc.community.dev/kalyani-government-engineering-college/" class="button">DSC Community Platform</a>
         </div>
+      </canvas>
     </header>
     <section id="about">
         <div class="container">
@@ -140,7 +141,7 @@
                 </div>
         </div>
     </section>
-
+    <script src="./resources/js/particles.js" charset="utf-8"></script>
     <script src="./resources/js/script.js "></script>
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js "></script>
 </body>
