@@ -10,7 +10,7 @@ nav {
 
 .side-nav {
     background-color: #F8F8FA;
-    /*border-right: 1px solid #e4e4ec;*/
+    border-right: 1px solid #e4e4ec;
 }
 
 .btn {
@@ -29,7 +29,7 @@ nav .buttons {
 }
 
 .logo-img {
-    background-image: url('../images/logo-dsc.png');
+    /*background-image: url('../images/logo-dsc.png');*/
     background-size: cover;
     background-position: center;
 }

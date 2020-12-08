@@ -50,11 +50,6 @@ nav .buttons {
     background-position: center;
 }
 
-header {
-    background-color: #20222b;
-    /*background-image: url('../images/dark-header-background.png');*/
-}
-
 #logo-main {
     height: 60px;
     position: absolute;

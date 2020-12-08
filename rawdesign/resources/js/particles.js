@@ -15,7 +15,7 @@ var ball = {
       phase: 0
    },
    ball_color = {
-       r: 207,
+       r: 255,
        g: 255,
        b: 4
    },
@@ -26,9 +26,9 @@ var ball = {
 
 // Line
    link_line_width = 0.8,
-   dis_limit = 260,
+   dis_limit = 300,
    add_mouse_point = true,
-   mouse_in = false,
+   mouse_in = true,
    mouse_ball = {
       x: 0,
       y: 0,
