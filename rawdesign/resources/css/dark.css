@@ -81,3 +81,25 @@ header {
 .sub-text {
     color: #56d899;
 }
+
+/* FOOTER */
+
+.footer{
+    background:#282A36;
+    color: #fff;
+}
+
+.footer .footer-content h2{
+color:rgb(204, 200, 200);
+}
+
+.footer .footer-content .about .socials a:hover{
+    color:white;
+    transition: all.4s;
+}
+
+.footer-bottom{
+background: #1b213d;
+color: rgb(204, 200, 200);
+text-align: center;
+}
