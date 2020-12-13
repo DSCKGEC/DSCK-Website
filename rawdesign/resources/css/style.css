@@ -47,7 +47,11 @@ a, a:active, a:hover, a:visited {
     width: 34px;
     border-radius: 17px;
 }
-
+/* added */
+.btn-big{
+    padding: 1rem 2rem;
+    line-height: 1.5rem;
+}
 .button {
     color: #FFF;
     background-color: #346df1;
@@ -272,4 +276,73 @@ header {
 #partners .container{
     flex-direction: column;
     text-align: center;
+}
+
+/*added*/
+.page-wrapper{
+    min-height: 100%;
+}
+
+/* FOOTER  */
+
+.footer{
+    box-shadow:0 -10px 20px 0px rgba(0, 0, 0, 0.12);
+    position: relative;
+    height: 240px;
+}
+
+.footer .footer-content{
+    height: 200px;
+    padding-left: 100px;
+    display: flex;
+}
+
+.footer .footer-content .footer-section {
+    flex: 1;
+    padding: 25px;
+
+}
+
+.footer .footer-content.footer-section h2{
+padding-top: 5px;
+}
+
+.footer .footer-content.about .contact span{
+    display: block;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+.footer .footer-content .about .socials a{
+width:45px;
+height:41px;
+padding-top: 5px;
+text-align: center;
+display: inline-block;
+font-size: 1.3rem;
+}
+
+.footer .footer-content .links ul a{
+display:block;
+margin-bottom: 10px;
+font-size: 2cm;
+padding-top: 4px;
+
+}
+
+.footer .footer-section .contact-form.contact-input{
+    margin-bottom: 100px;
+    line-height: 1.5rem;
+    padding: .9rem 1rem;
+    border:none;
+}
+
+.footer-bottom{
+height: 20px;
+width: 100%; 
+bottom: 0px;
+text-align: center;
+position: absolute;
+left:0px;
+padding-top: 0px;
 }
