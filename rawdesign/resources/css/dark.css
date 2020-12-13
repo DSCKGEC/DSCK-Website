@@ -2,22 +2,27 @@ body {
     background-color: #282A36;
     color: #fff;
 }
+
 ::-webkit-scrollbar {
     width: 0.5rem;
-  }
+}
+
 ::-webkit-scrollbar-track {
     background: repeating-linear-gradient(rgb(255, 52, 52), rgb(39, 39, 117), rgb(62, 241, 62), rgb(253, 253, 60));
-  }
+}
+
 ::-webkit-scrollbar-thumb {
     background: rgb(204, 200, 200);
     border: cornsilk;
-  }
+}
+
 ::-webkit-scrollbar-thumb:hover {
     background: #484849;
-  }
+}
+
 ::-webkit-scrollbar-thumb:active {
     background: #484849;
-  }
+}
 
 nav {
     background: #20222b;
@@ -45,7 +50,7 @@ nav .buttons {
 }
 
 .logo-img {
-    background-image: url('../images/logo-dsc.png');
+    background-image: url('../images/logo-black.png');
     background-size: cover;
     background-position: center;
 }
@@ -82,24 +87,25 @@ header {
     color: #56d899;
 }
 
+
 /* FOOTER */
 
-.footer{
-    background:#282A36;
+.footer {
+    background: #282A36;
     color: #fff;
 }
 
-.footer .footer-content h2{
-color:rgb(204, 200, 200);
+.footer .footer-content h2 {
+    color: rgb(204, 200, 200);
 }
 
-.footer .footer-content .about .socials a:hover{
-    color:white;
+.footer .footer-content .about .socials a:hover {
+    color: white;
     transition: all.4s;
 }
 
-.footer-bottom{
-background: #1b213d;
-color: rgb(204, 200, 200);
-text-align: center;
+.footer-bottom {
+    background: #1b213d;
+    color: rgb(204, 200, 200);
+    text-align: center;
 }
