@@ -305,11 +305,11 @@ header {
 .footer {
     box-shadow: 0 -10px 20px 0px rgba(0, 0, 0, 0.12);
     position: relative;
-    height: 240px;
+    height: 300px;
 }
 
 .footer .footer-content {
-    height: 200px;
+    height: 100%;
     padding-left: 100px;
     display: flex;
 }
@@ -317,6 +317,7 @@ header {
 .footer .footer-content .footer-section {
     flex: 1;
     padding: 25px;
+    padding-top: 50px;
 }
 
 .footer .footer-content.footer-section h2 {
@@ -330,9 +331,8 @@ header {
 }
 
 .footer .footer-content .about .socials a {
-    width: 45px;
-    height: 41px;
-    padding-top: 5px;
+    padding-right: 15px;
+    padding-top: 25px;
     text-align: center;
     display: inline-block;
     font-size: 1.3rem;
@@ -345,21 +345,14 @@ header {
     padding-top: 4px;
 }
 
-.footer .footer-section .contact-form.contact-input {
-    margin-bottom: 100px;
-    line-height: 1.5rem;
-    padding: .9rem 1rem;
-    border: none;
-}
-
 .footer-bottom {
-    height: 20px;
+    padding: 10px;
+    font-size: 70%;
     width: 100%;
     bottom: 0px;
     text-align: center;
     position: absolute;
     left: 0px;
-    padding-top: 0px;
 }
 
 .typed-text {

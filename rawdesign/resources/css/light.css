@@ -3,6 +3,10 @@ body {
     color: #202124;
 }
 
+a, a:active, a:visited, a:hover {
+    color: #202124;
+}
+
 nav {
     background: #F8F8FA;
     border-right: 1px solid #e4e4ec;
@@ -36,7 +40,8 @@ nav .buttons {
 }
 
 .button {
-    box-shadow: 0 14px 26px -12px rgba(153, 153, 153, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(153, 153, 153, 0.2);
+    box-shadow: 0 14px 26px -12px rgba(138, 119, 119, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(153, 153, 153, 0.2);
+    color: #FFF !important;
 }
 
 
@@ -57,7 +62,7 @@ nav .buttons {
 }
 
 .footer-bottom {
-    background: rgb(243, 238, 238);
-    color: rgb(151, 153, 155);
+    background: rgb(244, 247, 250);
+    color: rgb(29, 29, 29);
     text-align: center;
 }

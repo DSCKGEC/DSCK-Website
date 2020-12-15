@@ -3,6 +3,10 @@ body {
     color: #fff;
 }
 
+a, a:active, a:visited, a:hover {
+    color: #fff;
+}
+
 ::-webkit-scrollbar {
     width: 0.5rem;
 }
@@ -105,7 +109,7 @@ header {
 }
 
 .footer-bottom {
-    background: #1b213d;
+    background: #282a36e5;
     color: rgb(204, 200, 200);
     text-align: center;
 }
