@@ -248,3 +248,7 @@ header {
     flex-direction: column;
     text-align: center;
 }
+.typed-text
+{
+    height:1rem;
+}

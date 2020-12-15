@@ -72,37 +72,27 @@ function get_cookie(cookie_name) {
     return '';
 }
 const typedTextSpan = document.querySelector(".typed-text");
-const text="Kalyani Government Engineering College"
+const text="Kalyani Government Engineering College";
 const typingDelay = 120;
 const erasingDelay = 100;
 const TextDelay = 2000;
 let charIndex = 0;
+let charIndex2 = 0;
+
 
 function type()
 {
     if(charIndex < text.length){
-        typedTextSpan.textContent += text.charAt(charIndex);
+        typedTextSpan.textContent = text.substring(0,charIndex+1);
         charIndex++;
         setTimeout(type, typingDelay);
     }
     else
     {
-        setTimeout(erase, erasingDelay+TextDelay);
-    }
-}
-function erase()
-{
-    if(charIndex>0)
-    {
-        typedTextSpan.textContent = text.substring(0,charIndex-1);
-        charIndex--;
-        setTimeout(erase, erasingDelay);     
-    }
-    else
-    {
         setTimeout(type, typingDelay+TextDelay);
-    }    
+        charIndex=0;
+    }
 }
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", ()=> {
     setTimeout(type, 0);
 });
