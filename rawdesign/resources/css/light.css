@@ -3,13 +3,16 @@ body {
     color: #202124;
 }
 
+a, a:active, a:visited, a:hover {
+    color: #202124;
+}
+
 nav {
     background: #F8F8FA;
     border-right: 1px solid #e4e4ec;
 }
 
 .side-nav {
-    border-right: 1px solid #e4e4ec;
     background-color: #F8F8FA;
     border-right: 1px solid #e4e4ec;
 }
@@ -19,7 +22,8 @@ nav {
     background-color: #F8F8FA;
 }
 
-.active, .light {
+.active,
+.light {
     font-size: 18px;
     color: #FFF;
     background-color: #4285F4;
@@ -36,26 +40,29 @@ nav .buttons {
 }
 
 .button {
-    box-shadow: 0 14px 26px -12px rgba(153, 153, 153, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(153, 153, 153, 0.2);
+    box-shadow: 0 14px 26px -12px rgba(138, 119, 119, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(153, 153, 153, 0.2);
+    color: #FFF !important;
 }
 
+
 /* FOOTER */
-.footer{
+
+.footer {
     background: #fff;
     color: black;
 }
 
-.footer .footer-content h2{
-color:rgb(61, 58, 58);
+.footer .footer-content h2 {
+    color: rgb(61, 58, 58);
 }
 
-.footer .footer-content .about .socials a:hover{
-    color:white;
+.footer .footer-content .about .socials a:hover {
+    color: white;
     transition: all.4s;
 }
 
-.footer-bottom{
-background: rgb(243, 238, 238);
-color: rgb(151, 153, 155);
-text-align: center;
+.footer-bottom {
+    background: rgb(244, 247, 250);
+    color: rgb(29, 29, 29);
+    text-align: center;
 }
