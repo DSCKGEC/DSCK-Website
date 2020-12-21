@@ -3,7 +3,10 @@ body {
     color: #202124;
 }
 
-a, a:active, a:visited, a:hover {
+a,
+a:active,
+a:visited,
+a:hover {
     color: #202124;
 }
 
@@ -65,4 +68,12 @@ nav .buttons {
     background: rgb(244, 247, 250);
     color: rgb(29, 29, 29);
     text-align: center;
+}
+
+.btn-atr {
+    color: #202124;
+}
+
+.btn-atr:hover {
+    color: #696969;
 }

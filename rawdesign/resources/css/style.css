@@ -358,11 +358,3 @@ header {
 .typed-text {
     height: 1rem;
 }
-
-.btn-atr {
-    color: #202124;
-}
-
-.btn-atr:hover {
-    color: #55565c;
-}

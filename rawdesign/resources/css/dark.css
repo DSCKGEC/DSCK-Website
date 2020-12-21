@@ -3,7 +3,10 @@ body {
     color: #fff;
 }
 
-a, a:active, a:visited, a:hover {
+a,
+a:active,
+a:visited,
+a:hover {
     color: #fff;
 }
 
@@ -112,4 +115,12 @@ header {
     background: #282a36e5;
     color: rgb(204, 200, 200);
     text-align: center;
+}
+
+.btn-atr {
+    color: #ffffff;
+}
+
+.btn-atr:hover {
+    color: #a9acbb;
 }
