@@ -74,5 +74,8 @@ git pull
   <img src="https://avatars1.githubusercontent.com/u/54203624?s=50&u=786c9bf1bdd8b2b28cb3fcf663b110a5483c745b">
 </a>
 <a href="https://github.com/KylixMedusa">
-  <img src="https://avatars0.githubusercontent.com/u/56185721?s=460&u=67e0b3f0c28aa712b7417f362f9cf249b6030472&v=4" height="50px" width="50px">
+  <img src="https://avatars0.githubusercontent.com/u/56185721?s=50&u=67e0b3f0c28aa712b7417f362f9cf249b6030472">
+</a>
+<a href="https://github.com/Dev582">
+  <img src="https://avatars2.githubusercontent.com/u/62136619?s=50&u=f2930e3546cf5c1c6a5f215d94daaaff57191cae">
 </a>
