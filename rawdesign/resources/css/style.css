@@ -358,3 +358,9 @@ header {
 .typed-text {
     height: 1rem;
 }
+
+.minimap {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 20px;
+}

@@ -3,7 +3,10 @@ body {
     color: #202124;
 }
 
-a, a:active, a:visited, a:hover {
+a,
+a:active,
+a:visited,
+a:hover {
     color: #202124;
 }
 
