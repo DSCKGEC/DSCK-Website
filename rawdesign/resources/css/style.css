@@ -366,3 +366,8 @@ header {
 .btn-atr:hover {
     color: #55565c;
 }
+.minimap {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 20px;
+}
