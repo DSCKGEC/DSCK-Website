@@ -199,7 +199,7 @@ nav button {
     margin-left: 10px;
     margin-right: 10px;
     transform: rotate(0deg);
-    transition: 400ms;
+    transition: 500ms;
 }
 
 nav:hover .logo-img {
@@ -258,6 +258,17 @@ header {
 
 .content .button {
     margin-top: 40px;
+}
+
+#nokey {
+    position: static;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.typed-text {
+    height: 1rem;
 }
 
 
@@ -324,24 +335,35 @@ header {
     padding-top: 5px;
 }
 
-.footer .footer-content.about .contact span {
+.footer .footer-content .about .contact span {
     display: block;
     font-size: 1.3rem;
     margin-bottom: 8px;
 }
 
-.footer .footer-content .about .socials a {
-    padding-right: 15px;
-    padding-top: 25px;
-    text-align: center;
-    display: inline-block;
-    font-size: 1.3rem;
+.footer .footer-content .about img {
+    display: block;
+    margin: 0 auto;
 }
 
-.footer .footer-content .links ul a {
-    display: block;
+.footer .footer-content .about .socials a {
+    padding: 25px 7%;
+    display: inline-block;
+    font-size: 1.3rem;
+    align-items: flex-start;
+}
+
+.footer .footer-content .links {
+    text-align: center;
+    list-style: none;
+    /*list-style: square;*/
+    /* padding-left: 15px;*/
+    /*(as these were originally there, I kept it here, uncomment if required*/
     margin-bottom: 10px;
-    font-size: 2cm;
+}
+
+.footer .footer-content .links li {
+    font-size: 1.08em;
     padding-top: 4px;
 }
 
@@ -355,10 +377,6 @@ header {
     left: 0px;
 }
 
-.typed-text {
-    height: 1rem;
-}
-
 .btn-atr {
     color: #202124;
 }
@@ -366,6 +384,7 @@ header {
 .btn-atr:hover {
     color: #55565c;
 }
+
 .minimap {
     width: 80vw;
     margin: 0 auto;
