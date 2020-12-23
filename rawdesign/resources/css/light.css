@@ -59,8 +59,9 @@ nav .buttons {
     color: rgb(61, 58, 58);
 }
 
-.footer .footer-content .about .socials a:hover {
-    color: white;
+.footer .footer-content .about .socials a:hover,
+.footer .footer-content .links a:hover {
+    color: #6C7D8B;
     transition: all.4s;
 }
 
