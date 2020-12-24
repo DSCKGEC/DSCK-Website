@@ -3,7 +3,10 @@ body {
     color: #fff;
 }
 
-a, a:active, a:visited, a:hover {
+a,
+a:active,
+a:visited,
+a:hover {
     color: #fff;
 }
 
@@ -103,8 +106,9 @@ header {
     color: rgb(204, 200, 200);
 }
 
-.footer .footer-content .about .socials a:hover {
-    color: white;
+.footer .footer-content .about .socials a:hover,
+.footer .footer-content .links a:hover {
+    color: #bdb9b5;
     transition: all.4s;
 }
 
