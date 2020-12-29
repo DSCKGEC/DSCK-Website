@@ -1,0 +1,238 @@
+@mixin animation-enter($top,$name, $percent) {
+    @keyframes #{$name} {
+        0%{
+            top:0;
+            opacity:0;
+        }
+        #{$percent}{
+            opacity: 0;
+        }
+        100%{
+            top:$top;
+            opacity: 1;
+        }
+    }   
+}
+@mixin animation-fadeIn($left,$top,$name) {
+    @keyframes #{$name} {
+        0%{
+            transform: translate($left,$top);
+            opacity:0;
+        }
+        100%{
+            transform: translate(0,0);
+            opacity: 1;
+        }
+    }   
+}
+@mixin animation-rotate($name) {
+    @keyframes #{$name} {
+        0%{
+            transform: rotate(-90deg);
+            opacity:0;
+        }
+        100%{
+            transform: rotate(0deg);
+            opacity: 1;
+        }
+    }   
+}
+@mixin animation-grow($scale,$name) {
+    @keyframes #{$name} {
+        0%{
+            transform: scale($scale);
+            opacity:0;
+        }
+        100%{
+            transform: scale(1);
+            opacity: 1;
+        }
+    }   
+}
+
+@keyframes pop-up{
+    0%{
+        opacity: 0;
+        transform: scale(0) translateY(50%);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+
+.image{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    z-index: 0;
+    #floor {
+        position: absolute;
+        width: 90.1%;
+        height: 50.15135%;
+        left: 4.95%;
+        top: 47.4%;
+        z-index: 0;
+        opacity: 0;
+        @include animation-grow(0,grow-floor);
+        animation: grow-floor 0.2s linear forwards;
+        // animation-delay:1.5s ;
+    }
+    #shadows {
+        position: absolute;
+        width: 73.45%;
+        height: 44.15%;
+        left: 17.15%;
+        top: 47.15%;
+        z-index: 1;
+        opacity: 0;
+        // filter: opacity(0.2) brightness(0.3);
+        @include animation-grow(0.8,grow-floor);
+        animation: grow-floor 0.5s linear forwards;
+        animation-delay:1.5s;
+    }
+    #table {
+        position: absolute;
+        width: 60.2%;
+        height: 55.5%;
+        left: 30.75%;
+        top: 25.1%;
+        z-index: 2;
+        @include animation-grow(0.8,grow-table);
+        animation: grow-table 0.1s linear forwards;
+    }
+    #htmlbox {
+        position: absolute;
+        width: 11.9%;
+        height: 17.2%;
+        left: 32.25%;
+        top: 4.6%;
+        z-index: 10;
+        opacity: 0;
+        animation: pop-up 1s linear forwards;
+        animation-delay: 1s;
+    }
+    #keyboard {
+        position: absolute;
+        width: 22.35%;
+        height: 13.95%;
+        left: 43.3%;
+        top: 36.05%;
+        z-index: 4;
+        @include animation-fadeIn(-25%,25%, fade-in-keyboard);
+        animation: fade-in-keyboard 0.5s linear forwards;
+        animation-delay: 0.1s;
+        opacity: 0;
+    }
+    #mouse {
+        position: absolute;
+        width: 8.9%;
+        height: 5.85%;
+        left: 66.3%;
+        top: 46.35%;
+        z-index: 4;
+        @include animation-fadeIn(-25%,25%, fade-in-mouse);
+        animation: fade-in-mouse 0.5s linear forwards;
+        animation-delay: 0.1s;
+        opacity: 0;
+    }
+    #plant {
+        position: absolute;
+        width: 17.05%;
+        height: 26.95%;
+        left: 70.5%;
+        top: 56.2%;
+        z-index: 4;
+        @include animation-rotate(rotate-plant);
+        animation: rotate-plant 1s linear forwards;
+        animation-delay: 0.2s;
+        opacity: 0;
+    }
+    #monitor {
+        position: absolute;
+        width: 28.4%;
+        height: 36.8%;
+        left: 53.75%;
+        top: 10.65%;
+        z-index: 4;
+        @include animation-fadeIn(-5%,-5%, fade-in-monitor);
+        animation: fade-in-monitor 0.3s linear forwards;
+        animation-delay: 0.2s;
+        opacity: 0;
+    }
+    #screen1 {
+        position: absolute;
+        width: 28.25%;
+        height: 36.2%;
+        left: 57.95%;
+        top: 6.7%;
+        z-index: 5;
+        opacity: 0;
+        @include animation-fadeIn(15%,15%, fade-in-screen1);
+        animation: fade-in-screen1 0.5s linear forwards;
+        animation-delay:0.5s ;
+    }
+    #screen2 {
+        position: absolute;
+        width: 11%;
+        height: 22.35%;
+        left: 81.65%;
+        top: 29.1%;
+        z-index: 6;
+        opacity: 0;
+        @include animation-fadeIn(25%,25%, fade-in-screen2);
+        animation: fade-in-screen2 0.5s linear forwards;
+        animation-delay: 1s ;
+    }
+    #tab1 {
+        position: absolute;
+        width: 14.2%;
+        height: 15.15%;
+        left: 7.65%;
+        top: 29.75%;
+        z-index: 10;
+        opacity: 0;
+        @include animation-enter(29.75%,enter-tab1, 45%);
+        animation: enter-tab1 0.6s linear forwards;
+        animation-delay: 1s;
+    }
+    #tab2 {
+        position: absolute;
+        width: 14.2%;
+        height: 15.15%;
+        left: 7.65%;
+        top: 17.2%;
+        z-index: 10;
+        opacity: 0;
+        @include animation-enter(17.2%,enter-tab2, 30%);
+        animation: enter-tab2 0.4s linear forwards;
+        animation-delay: 1s;
+    }
+    #tab3 {
+        position: absolute;
+        width: 14.2%;
+        height: 15.15%;
+        left: 7.65%;
+        top: 4.7%;
+        z-index: 10;
+        opacity: 0;
+        @include animation-enter(4.7%,enter-tab3, 15%);
+        animation: enter-tab3 0.2s linear forwards;
+        animation-delay: 1s;
+    }
+    #character {
+        position: absolute;
+        width: 43.85%;
+        height: 67.6%;
+        left: 16.1%;
+        top: 22.95%;
+        z-index: 10;
+        opacity: 0;
+        @include animation-fadeIn(-10%,10%, fade-in-character);
+        animation: fade-in-character 0.6s linear forwards;
+        animation-delay:0.4s;
+    }
+    
+}
