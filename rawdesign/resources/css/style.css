@@ -303,6 +303,27 @@ header {
     text-align: center;
 }
 
+/* partner logos */
+
+.logos{
+  text-align: center;
+  padding-bottom: 3%;
+  padding-top: 3%;
+}
+
+.partnerlogo{
+  width: 20%;
+  margin: 20px 20px 40px;
+}
+
+.KeyGEnCoders-logo {
+  width: 15%;
+}
+
+.MinDwebs-logo{
+  width: 15%;
+}
+
 
 /*added*/
 
