@@ -1,66 +1,117 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
+import { RouteComponentProps, useLocation, withRouter } from "react-router-dom";
+import { RouteInfo } from "../../Interfaces";
 import "./Navbar.scss";
 
-const Navbar:React.FC = () => {
-    function toggleStyle(){
+export const routes: RouteInfo[] = [
+  { path: "/home", title: "Home", icon: "fa-home" },
+  { path: "/events", title: "Events", icon: "fa-calendar" },
+  { path: "/projects", title: "Projects", icon: "fa-sticky-note" },
+  { path: "/team", title: "Team", icon: "fa-users" },
+  { path: "/contact", title: "Contact", icon: "fa-phone" },
+];
 
+const Navbar: React.FC<RouteComponentProps> = (props) => {
+  const location = useLocation();
+
+  const [menuClass, setMenuClass] = useState("");
+  const [activeIndex, setIndex] = useState(0);
+
+  function navbarToggle() {
+    if (menuClass === "open") {
+      setMenuClass("close");
+    } else {
+      setMenuClass("open");
     }
+  }
+
+  useEffect(() => {
+    routes
+      .filter((route) => {return route.path === location.pathname})
+      .map((route, index) => (
+        setIndex(index)
+      ));
+  }, [location]);
 
   return (
-    <nav>
-    <div className="side-nav">
-        <div className="wrapper logo">
-            <div className="logo-img"></div>
-            <div className="nav-text">DSC KGEC</div>
-        </div>
-        <a className="btn-atr" href="./index.html">
-            <div className="wrapper nav-start">
-                <button type="button">
-            <div className="active btn">
-            </div>
-        </button>
-                <div className="nav-text">Home</div>
-            </div>
-        </a>
-        <a className="btn-atr" href="./events.html">
-            <div className="wrapper">
-                <button type="button">
-            <div className="btn">
-            </div>
-        </button>
-                <div className="nav-text">Events</div>
-            </div>
-        </a>
-        <a className="btn-atr" href="./projects.html">
-            <div className="wrapper">
-                <button type="button">
-            <div className="btn">
-            </div>
-        </button>
-                <div className="nav-text">Projects</div>
-            </div>
-        </a>
-        <a className="btn-atr" href="./joinus.html">
-            <div className="wrapper">
-                <button type="button">
-            <div className="btn">
-            </div>
-        </button>
-                <div className="nav-text">Join us</div>
-            </div>
-        </a>
-        <div className="buttons">
-            <div className="wrapper">
-                <button type="button" onClick={toggleStyle} name="Theme" value="Theme">
-                <div className="btn" id="theme-btn">
-                </div>
-            </button>
-                <div className="nav-text">Toggle Theme</div>
-            </div>
-        </div>
-    </div>
-</nav>
-  );
-}
+    <React.Fragment>
+      <div className={`navbar-toggle ${menuClass}`} onClick={navbarToggle}>
+        <i className="fa fa-angle-right"></i>
+      </div>
 
-export default Navbar;
+      <div className="navbar-container">
+        {routes.map((route, index) =>
+          activeIndex === index ? (
+            <div className={`menu-vert active`} key={route.title}>
+              <div
+                className="menu-item"
+                onClick={() => {
+                  props.history.push(route.path);
+                }}
+              >
+                <div className="menu-preview">
+                  <svg
+                    className="menu__stroke"
+                    width="44"
+                    height="44"
+                    viewBox="0 0 44 44"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="22"
+                      cy="22"
+                      r="21"
+                      stroke="#557593"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeDasharray="6 6"
+                    ></circle>
+                  </svg>
+                  <i className={`fa ${route.icon}`}></i>
+                </div>
+                <div className="tooltip">{route.title}</div>
+              </div>
+            </div>
+          ) : (
+            <div className={`menu-vert`} key={route.title}>
+              <div
+                className="menu-item"
+                onClick={() => {
+                  props.history.push(route.path);
+                }}
+              >
+                <div className="menu-preview">
+                  <svg
+                    className="menu__stroke"
+                    width="44"
+                    height="44"
+                    viewBox="0 0 44 44"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="22"
+                      cy="22"
+                      r="21"
+                      stroke="#557593"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeDasharray="6 6"
+                    ></circle>
+                  </svg>
+                  <i className={`fa ${route.icon}`}></i>
+                </div>
+                <div className="tooltip">{route.title}</div>
+              </div>
+            </div>
+          )
+        )}
+      </div>
+
+      <div className="overlay"></div>
+    </React.Fragment>
+  );
+};
+
+export default withRouter(Navbar);
