@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.scss";
 import DSCLogo from '../../static/dsc-logo-square.svg';
 import MainSvg from "../../Components/MainSvg/MainSvg";
+import MainEventsCard from "../../Components/MainEventsCard/MainEventsCard";
 
 const Home: React.FC = () => {
   return (
@@ -59,6 +60,7 @@ const Home: React.FC = () => {
           </svg>
         </div>
       </div>
+      <MainEventsCard/>
     </div>
   );
 };
