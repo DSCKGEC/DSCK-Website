@@ -4,6 +4,7 @@ import { Redirect, Route, Switch, withRouter } from "react-router-dom";
 import Navbar from "../../Components/Navbar/Navbar";
 import Socials from "../../Components/Socials/Socials";
 import Home from "../Home/Home";
+import Team from "../Team/Team";
 
 const Layout: React.FC = () => {
   const [scrollHeight,setScrollHeight] = useState(0);
@@ -32,6 +33,7 @@ const Layout: React.FC = () => {
       <div className="router-container" ref={routerContainer}>
         <Switch>
           <Route exact path="/home" component={Home}/>
+          <Route exact path="/team" component={Team}/>
           <Redirect to="/home"/>
         </Switch>
       </div>
