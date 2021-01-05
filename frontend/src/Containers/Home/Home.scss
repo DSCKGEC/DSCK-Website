@@ -1,177 +1,203 @@
 .home-container {
     height: 500vh;
     width: 100%;
-    padding:0 15%;
+    padding: 0 15%;
+
     .intro {
-      display: grid;
-      width: 100%;
-      min-height: 100vh;
-      margin: 0 auto;
-      grid-template-columns: 50% 50%;
-      grid-auto-rows: 1fr max-content;
-      // margin-top:120px;
+        display: grid;
+        width: 100%;
+        min-height: 100vh;
+        margin: 0 auto;
+        grid-template-columns: 50% 50%;
+        grid-auto-rows: 1fr max-content;
+        // margin-top:120px;
     }
-    .main-down-arrow{
-      grid-column: span 2;
-      width: 30px;
-      margin: 10px auto;
-      cursor: pointer;
-      position: relative;
-      z-index: 1;
+
+    .main-down-arrow {
+        grid-column: span 2;
+        width: 30px;
+        margin: 10px auto;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
     }
-    .text-content{
+
+    .text-content {
         transform-origin: left;
         transform: scale(0.9);
         margin: auto;
     }
-    .svg-content{
-      width: 100%;
-      height: max-content;
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-  
-    .dsc-logo {
-      width: 50px;
-      height: 50px;
-  
-    }
-  
-    .text-content {
-      span {
-  
-        align-items: center;
-        display: flex;
-      }
-  
-      h2 {
-        margin: 10px 0;
-      }
-  
-      p {
-        padding: 0px;
-        margin: 0px;
-        padding-bottom: 15px;
-        line-height: 4vh;
-        letter-spacing: 0.07em;
-        font-weight: 200;
-        span{
-            font-weight: 600;
-        }
-      }
-    }
-  
-    .heading {
-      font-weight: 200;
-    }
-  
-  
-    .icon {
-      top: 900px;
-      display: none;
-  
-      img {
-        transform: translate(-50%, -50%);
-        top: 50%;
-        left: 50%;
+
+    .svg-content {
+        width: 100%;
+        height: max-content;
         position: relative;
-        height: 50px;
-        width: 50px;
-      }
+        top: 50%;
+        transform: translateY(-50%);
     }
-  
-  }
-  @media screen and  (max-width: 1400px){
-      h1 {
-          font-size: 30px;
-      }
-      h2{
-          font-size: 25px;
-      }
-      p{
-          font-size: 20px;
-      }
-  }
-  @media screen and  (max-width: 1024px){
-      h1 {
-          font-size: 28px;
-      }
-      h2{
-          font-size: 23px;
-      }
-      p{
-          font-size: 15px;
-      }
-  }
-  @media screen and  (max-width: 767px){
-      h1 {
-          font-size: 25px;
-      }
-      h2{
-          font-size: 20px;
-      }
-      .home-container{
-          .intro{
-              text-align: center;
-              margin: 0;
-              width: 100%;
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-          }
-          .text-content span{
-              justify-content: center;
-          }
-          .text-content,.svg-content {
-              padding: 0;
-              top:0;
-              transform: none;
-          }
-          .text-content{
-              transform: none;
-              margin: 0;
-          }
-      }
-  }
-  @media screen and (max-width: 480px){
-      h1 {
-          font-size: 25px;
-      }
-      h2{
-          font-size: 18px;
-      }
-      .home-container .dsc-logo {
-          width: 40px;
-          height: 40px;
-      
-      }
-      .home-container .main-down-arrow{
-          width: 20px;
-      }
-      .home-container{
-          .svg-content {
-              margin-bottom: 30px;
-          }
-      }
-      p{
-          font-size: small;
-      }
-  }
-  @media screen and (max-width: 360px){
-      h1 {
-          font-size: 25px;
-      }
-      h2{
-          font-size: 16px;
-      }
-      .home-container .dsc-logo {
-          width: 40px;
-          height: 40px;
-      
-      }
-      p{
-          font-size: small;
-      }
-  }
-  
+
+    .dsc-logo {
+        width: 50px;
+        height: 50px;
+
+    }
+
+    .text-content {
+        span {
+
+            align-items: center;
+            display: flex;
+        }
+
+        h2 {
+            margin: 10px 0;
+        }
+
+        p {
+            padding: 0px;
+            margin: 0px;
+            padding-bottom: 15px;
+            line-height: 4vh;
+            letter-spacing: 0.07em;
+            font-weight: 200;
+
+            span {
+                font-weight: 600;
+            }
+        }
+    }
+
+    .heading {
+        font-weight: 200;
+    }
+
+
+    .icon {
+        top: 900px;
+        display: none;
+
+        img {
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            position: relative;
+            height: 50px;
+            width: 50px;
+        }
+    }
+
+    @media screen and (max-width: 1400px) {
+        h1 {
+            font-size: 30px;
+        }
+
+        h2 {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        h1 {
+            font-size: 28px;
+        }
+
+        h2 {
+            font-size: 23px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        h1 {
+            font-size: 25px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        & {
+            .intro {
+                text-align: center;
+                margin: 0;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .text-content span {
+                justify-content: center;
+            }
+
+            .text-content,
+            .svg-content {
+                padding: 0;
+                top: 0;
+                transform: none;
+            }
+
+            .text-content {
+                transform: none;
+                margin: 0;
+            }
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        h1 {
+            font-size: 25px;
+        }
+
+        h2 {
+            font-size: 18px;
+        }
+
+        & .dsc-logo {
+            width: 40px;
+            height: 40px;
+
+        }
+
+        & .main-down-arrow {
+            width: 20px;
+        }
+
+        & {
+            .svg-content {
+                margin-bottom: 30px;
+            }
+        }
+
+        p {
+            font-size: small;
+        }
+    }
+
+    @media screen and (max-width: 360px) {
+        h1 {
+            font-size: 25px;
+        }
+
+        h2 {
+            font-size: 16px;
+        }
+
+        .dsc-logo {
+            width: 40px;
+            height: 40px;
+
+        }
+
+        p {
+            font-size: small;
+        }
+    }
+}
