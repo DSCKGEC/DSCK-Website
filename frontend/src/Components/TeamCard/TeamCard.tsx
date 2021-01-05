@@ -7,8 +7,6 @@ const TeamCard: React.FC = () => {
       <div className="card">
         <div className="additional">
           <div className="user-card">
-            <div className="level center">Level 13</div>
-            <div className="points center">5,312 Points</div>
             <svg
               width="110"
               height="110"
