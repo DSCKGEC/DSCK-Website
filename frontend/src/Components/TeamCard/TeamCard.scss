@@ -61,7 +61,10 @@
         width: 150px;
         height: 100%;
         position: relative;
-        float: left;
+        float: left; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .card .additional .user-card::after {
