@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { RouteComponentProps, useLocation, withRouter } from "react-router-dom";
+import { NavLink, RouteComponentProps, useLocation, withRouter } from "react-router-dom";
 import { RouteInfo } from "../../Interfaces";
 import "./Navbar.scss";
 
@@ -15,7 +15,6 @@ const Navbar: React.FC<RouteComponentProps> = (props) => {
   const location = useLocation();
 
   const [menuClass, setMenuClass] = useState("");
-  const [activeIndex, setIndex] = useState(0);
 
   function navbarToggle() {
     if (menuClass === "open") {
@@ -25,14 +24,6 @@ const Navbar: React.FC<RouteComponentProps> = (props) => {
     }
   }
 
-  useEffect(() => {
-    routes
-      .filter((route) => {return route.path === location.pathname})
-      .map((route, index) => (
-        setIndex(index)
-      ));
-  }, [location]);
-
   return (
     <React.Fragment>
       <div className={`navbar-toggle ${menuClass}`} onClick={navbarToggle}>
@@ -40,15 +31,10 @@ const Navbar: React.FC<RouteComponentProps> = (props) => {
       </div>
 
       <div className="navbar-container">
-        {routes.map((route, index) =>
-          activeIndex === index ? (
-            <div className={`menu-vert active`} key={route.title}>
+        {routes.map((route) =>
+          <NavLink to={route.path} activeClassName="active" className="menu-vert" key={route.title}>
               <div
-                className="menu-item"
-                onClick={() => {
-                  props.history.push(route.path);
-                }}
-              >
+                className="menu-item">
                 <div className="menu-preview">
                   <svg
                     className="menu__stroke"
@@ -72,41 +58,8 @@ const Navbar: React.FC<RouteComponentProps> = (props) => {
                 </div>
                 <div className="tooltip">{route.title}</div>
               </div>
-            </div>
-          ) : (
-            <div className={`menu-vert`} key={route.title}>
-              <div
-                className="menu-item"
-                onClick={() => {
-                  props.history.push(route.path);
-                }}
-              >
-                <div className="menu-preview">
-                  <svg
-                    className="menu__stroke"
-                    width="44"
-                    height="44"
-                    viewBox="0 0 44 44"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle
-                      cx="22"
-                      cy="22"
-                      r="21"
-                      stroke="#557593"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeDasharray="6 6"
-                    ></circle>
-                  </svg>
-                  <i className={`fa ${route.icon}`}></i>
-                </div>
-                <div className="tooltip">{route.title}</div>
-              </div>
-            </div>
-          )
-        )}
+            </NavLink>
+          )}
       </div>
 
       <div className="overlay"></div>
