@@ -3,8 +3,7 @@
 
 .contact {
   margin: 0;
-  padding: 0;
-  // background-image: url(../../static/chat.png);
+  padding: 0 12%;
 }
 
 // ------------------ Logo And Heading ---------------------------
@@ -13,13 +12,13 @@
 
   .dsc-background {
     width: 100%;
-    // position: relative;
+
     img {
       width: 100%;
     }
     .header-title {
       position: absolute;
-      top: 5rem;
+      top: 2rem;
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -41,26 +40,27 @@
 
 // --------------------Form----------------------
 
+$google-blue: #4285f4;
 form {
   width: fit-content;
   display: table;
-  background-color: #4285f4;
-  // background: rgb(2, 0, 36);
-  // background: linear-gradient(to bottom right, #9966ff 0%, #4285f4 100%);
+  background-color: #fff;
   margin: 8rem; //auto;
   margin-left: auto;
-  margin-top: 0;
   margin-right: 5%;
   padding: 3rem;
-  // margin-bottom: 0;
   border-radius: 5px;
   border: 0.5px;
   // padding: 10px;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  // original Box shadow idea
+  // box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: -22px -22px 44px #bebebe, 22px 22px 44px #ffffff;
   label {
-    color: white;
+    display: none;
+    padding-left: 8px;
     font: 20px Helvetica, Arial, sans-serif;
-    // margin-bottom: 5px;
   }
   input,
   textarea {
@@ -68,17 +68,22 @@ form {
     // font: 18px Helvetica, Arial, sans-serif;
     font-family: "Barlow", sans-serif;
     box-sizing: border-box;
-    border-radius: 5px;
+    // border-radius: 5px;
     display: block;
     border: none;
+    border-bottom: 1px solid rgba(93, 93, 90, 0.5);
     padding: 0.5rem;
-    width: 400px; //30vw; //27.5vw; //375px
+    padding-top: 2rem;
+    width: 350px; //27.5vw;
     margin-top: 0.6rem;
     margin-bottom: 1.25rem;
     font-size: 18px;
     outline: none;
     transition: all 0.2s ease-in-out;
 
+    &:hover {
+      border-bottom: 1.1px solid rgba(93, 93, 90, 1);
+    }
     &::placeholder {
       transition: all 0.2s ease-in-out;
       color: #999;
@@ -103,17 +108,19 @@ form {
   button {
     border-radius: 5px;
     transition: all 0.2s ease-in-out;
-    font: 18px Helvetica, Arial, sans-serif;
-    border: none;
-    background: #9966ff; // #1792e8;
-    color: #fff;
+    font: 18px "Barlow", Arial, sans-serif;
+    font-weight: bold;
+    border: 1px solid $google-blue;
+    background: #fff;
     padding: 0.7rem;
     width: 100%;
     text-transform: uppercase;
     letter-spacing: 5px;
+    transition: 0.8s ease-in-out;
 
     &:hover {
-      background: #9933ff; // #0e82d4;
+      background: rgba(66, 133, 244, 0.7);
+      color: #fff;
       cursor: pointer;
     }
   }
@@ -127,7 +134,7 @@ form {
   // justify-content: center;
   align-items: center;
   margin-left: 3px;
-  // margin-top: 100px;
+  margin-top: 100px;
 
   .fade-in-left {
     -webkit-animation: fade-in-left 3s cubic-bezier(0.39, 0.575, 0.565, 1) 1.3s
@@ -204,11 +211,7 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // background-color: blueviolet;
-  // position: relative;
-  // bottom: 10vh;
   padding-bottom: 20vh;
-  // margin-bottom: 0;
   z-index: -1;
   h1 {
     color: #ea4335;
@@ -234,7 +237,7 @@ form {
 
 //----------------Media Queries-------------------------
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .middle {
     display: flex;
     justify-content: center;
@@ -251,8 +254,6 @@ form {
       padding: 1.5rem;
       input,
       textarea {
-        // padding-left: 0;
-        // padding-right: 0;
         width: 400px;
       }
       button {
@@ -263,12 +264,15 @@ form {
 }
 
 @media (max-width: 425px) {
+  .contact {
+    padding: 0;
+  }
   .heading {
     position: relative;
 
     .dsc-background {
       width: 100%;
-      // position: relative;
+
       img {
         width: 100%;
       }
@@ -301,24 +305,25 @@ form {
       position: absolute;
     }
     form {
-      margin: auto;
+      margin: auto 5%;
       margin-top: 15%;
       margin-bottom: 10vh;
       padding: 1.5rem;
       input,
       textarea {
-        // padding-left: 0;
-        // padding-right: 0;
-        width: 82vw;
+        width: 68vw; //82vw
       }
       button {
         width: 100%;
       }
     }
   }
+  .socialmedia-banner {
+    padding: 0 12%;
+  }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .header-title {
     h1 {
       font-size: 18px;
@@ -331,8 +336,17 @@ form {
     form {
       input,
       textarea {
-        width: 75vw;
+        width: 60vw;
+        padding-right: 0;
       }
+    }
+  }
+  .socialmedia-banner {
+    h1 {
+      font-size: 25px;
+    }
+    img {
+      width: 42px; //4%;
     }
   }
 }

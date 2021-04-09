@@ -12,7 +12,7 @@ const Form = (props) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     props.Submit(formData);
-    
+
     setFormData({
       fname: "",
       lname: "",
@@ -20,11 +20,10 @@ const Form = (props) => {
       message: "",
     });
   };
-  
 
   return (
     <form className="" onSubmit={handleSubmit}>
-      <label htmlFor="fname">First name: </label>
+      {/* <label htmlFor="fname"> First name: </label> */}
       <input
         type="text"
         id="fname"
@@ -33,7 +32,7 @@ const Form = (props) => {
         onChange={updateInput}
         value={formData.fname || ""}
       />
-      <label htmlFor="lname">Last name: </label>
+      {/* <label htmlFor="lname"> Last name: </label> */}
       <input
         type="text"
         id="lname"
@@ -42,7 +41,7 @@ const Form = (props) => {
         onChange={updateInput}
         value={formData.lname || ""}
       />
-      <label htmlFor="email">E-Mail: </label>
+      {/* <label htmlFor="email"> E-Mail: </label> */}
       <input
         type="email"
         id="email"
@@ -51,7 +50,7 @@ const Form = (props) => {
         onChange={updateInput}
         value={formData.email || ""}
       />
-      <label htmlFor="message">Message: </label>
+      {/* <label htmlFor="message"> Message: </label> */}
       <textarea
         type="text"
         id="message"
@@ -60,7 +59,9 @@ const Form = (props) => {
         onChange={updateInput}
         value={formData.message || ""}
       ></textarea>
-      <button type="submit">Submit</button>
+      <button type="submit">
+        <span>Submit</span>
+      </button>
     </form>
   );
 };
