@@ -1,12 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import './Layout.scss'
-import { Redirect, Route, Switch, withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import Navbar from "../../Components/Navbar/Navbar";
 import Socials from "../../Components/Socials/Socials";
-import Home from "../Home/Home";
-import Team from "../Team/Team";
+import { renderRoutes } from "react-router-config";
 
-const Layout: React.FC = () => {
+const Layout: React.FC<any> = (props) => {
   const [scrollHeight,setScrollHeight] = useState(0);
   const routerContainer = useRef<HTMLDivElement>(null)
 
@@ -27,15 +26,13 @@ const Layout: React.FC = () => {
     setScrollHeight((e.target.scrollTop/(e.target.scrollHeight - e.target.clientHeight))*100);
   }
 
+  const { route } = props;
+
   return (
     <React.Fragment>
       <Navbar></Navbar>
       <div className="router-container" ref={routerContainer}>
-        <Switch>
-          <Route exact path="/home" component={Home}/>
-          <Route exact path="/team" component={Team}/>
-          <Redirect to="/home"/>
-        </Switch>
+        {renderRoutes(route.routes)}
       </div>
       <Socials percent={scrollHeight}></Socials>
     </React.Fragment>
