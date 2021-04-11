@@ -3,13 +3,14 @@ import "./Layout.scss";
 import { Redirect, Route, Switch, withRouter } from "react-router-dom";
 import Navbar from "../../Components/Navbar/Navbar";
 import Socials from "../../Components/Socials/Socials";
+import { renderRoutes } from "react-router-config";
 import Home from "../Home/Home";
 import Team from "../Team/Team";
 import Contact from "../Contacts/contact";
 
-const Layout: React.FC = () => {
-  const [scrollHeight, setScrollHeight] = useState(0);
-  const routerContainer = useRef<HTMLDivElement>(null);
+const Layout: React.FC<any> = (props) => {
+  const [scrollHeight,setScrollHeight] = useState(0);
+  const routerContainer = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     let node: HTMLDivElement;
@@ -32,16 +33,13 @@ const Layout: React.FC = () => {
     );
   }
 
+  const { route } = props;
+
   return (
     <React.Fragment>
       <Navbar></Navbar>
       <div className="router-container" ref={routerContainer}>
-        <Switch>
-          <Route exact path="/home" component={Home} />
-          <Route exact path="/team" component={Team} />
-          <Route exact path="/contact" component={Contact} />
-          <Redirect to="/home" />
-        </Switch>
+        {renderRoutes(route.routes)}
       </div>
       <Socials percent={scrollHeight}></Socials>
     </React.Fragment>

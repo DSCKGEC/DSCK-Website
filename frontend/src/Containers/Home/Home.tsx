@@ -60,7 +60,7 @@ const Home: React.FC = () => {
           </svg>
         </div>
       </div>
-      <MainEventsCard/>
+      {/* <MainEventsCard/> */}
     </div>
   );
 };
