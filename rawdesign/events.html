@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Student Clubs | KGEC</title>
+
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/light.css" title="Light">
+    <link rel="stylesheet" type="text/css" href="resources/css/dark.css" title="Dark">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@578&display=swap" rel="stylesheet">
+    <!--title icon-->
+    <link rel="icon" href="resources/images/logo-dsc.png" type="image/x-icon">
+</head>
+
+<!--page wrapper-->
+<div class="page-wrapper">
+
+    <body>
+        <!-- SIDE NAV -->
+        <nav>
+            <div class="side-nav">
+                <div class="wrapper logo">
+                    <div class="logo-img"></div>
+                    <div class="nav-text">DSC KGEC</div>
+                </div>
+                <a class="btn-atr" href="./index.html">
+                    <div class="wrapper nav-start">
+                        <button type="button">
+                            <div class="btn">
+                                <ion-icon name="square-outline"></ion-icon>
+                            </div>
+                        </button>
+                        <div class="nav-text">Home</div>
+                    </div>
+                </a>
+                <a class="btn-atr" href="./events.html">
+                    <div class="wrapper">
+                        <button type="button">
+                            <div class="active btn">
+                                <ion-icon name="bookmark-outline"></ion-icon>
+                            </div>
+                        </button>
+                        <div class="nav-text">Events</div>
+                    </div>
+                </a>
+                <a class="btn-atr" href="./projects.html">
+                    <div class="wrapper">
+                        <button type="button">
+                            <div class="btn">
+                                <ion-icon name="git-merge-outline"></ion-icon>
+                            </div>
+                        </button>
+                        <div class="nav-text">Projects</div>
+                    </div>
+                </a>
+                <a class="btn-atr" href="./joinus.html">
+                    <div class="wrapper">
+                        <button type="button">
+                            <div class="btn">
+                                <ion-icon name="paper-plane-outline"></ion-icon>
+                            </div>
+                        </button>
+                        <div class="nav-text">Join us</div>
+                    </div>
+                </a>
+                <div class="buttons">
+                    <div class="wrapper">
+                        <button type="button" onclick="toggleStyle() ;return false " name="Theme " value="Theme ">
+                            <div class="btn" id=theme-btn>
+                                <ion-icon name="contrast-outline"></ion-icon>
+                            </div>
+                        </button>
+                        <div class="nav-text">Toggle Theme</div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <header>
+            <canvas id="nokey" style="position:absolute;left:0;top:0; width: 100%;"></canvas>
+            <div id="canvas-wrap" style="position:absolute;left:20;top:20">
+                <div class="content">
+                    <h1>Developer Student Clubs</h1>
+                    <h2 class="typed-text"></h2>
+                    <a href="https://dsc.community.dev/kalyani-government-engineering-college/" class="button">DSC
+                        Community Platform</a>
+                </div>
+        </header>
+        <!--add content here-->
+        <!--section id="about">
+            <div class="container">
+                <div class="flex-2">
+                    <div class="title">
+                        <div class="hero-text">About us</div>
+                        <div class="sub-text"><u>What we do at DSC KGEC?</u></div>
+                    </div>
+                    <p class="short-text">
+                        DSC KGEC is a student led club, built on the power of communities. We believe that great things happen when young inquisitive minds come together, to explore new technologies and create stuff. It is also a way for students to bridge the industry-academia
+                        gap through peer-based, project focused learning.
+                    </p>
+                    <a href="https://dsc.community.dev/kalyani-government-engineering-college/" class="button">Join
+                        us</a>
+                </div>
+                <div class="flex-2">
+                    <img src="./resources/images/about.png" alt="About Us" class="content-image">
+                </div>
+            </div>
+        </section>
+        <section id="activities">
+            <div class="container">
+                <div class="flex-2">
+                    <img src="./resources/images/about.png" alt="About Us" class="content-image">
+                </div>
+                <div class="flex-2">
+                    <div class="title">
+                        <div class="hero-text">Activities</div>
+                        <div class="sub-text"><u>How do we make technologies fun to learn?</u></div>
+                    </div>
+                    <p class="short-text">
+                        Developers Student Club KGEC is inspired by the Google Developers' Family. The motive is to create a local ecosystem of Developers in and around the Campus. And having fun doing it.
+                    </p>
+                    <a href="https://dsc.community.dev/kalyani-government-engineering-college/" class="button">Checkout
+                        our activities</a>
+                </div>
+            </div>
+        </section>
+        <section id="team">
+            <div class="container">
+                <div class="flex-2">
+                    <div class="title">
+                        <div class="hero-text">Team</div>
+                        <div class="sub-text"><u>Who makes all the fun happen?</u></div>
+                    </div>
+                    <p class="short-text">
+                        One log creates a small fire, adequate to warm you up, add just a few more pieces to blast an immense bonfire, large enough to warm up your entire circle; needless to say that individuality counts but teamwork dynamites. At DC KGEC, we celebrate teamwork
+                        and attribute the success of DC to the wonderful individuals who put untiring efforts for it.
+                    </p>
+                    <a href="https://dsc.community.dev/kalyani-government-engineering-college/" class="button">Meet our
+                        team</a>
+                </div>
+                <div class="flex-2">
+                    <img src="./resources/images/about.png" alt="About Us" class="content-image">
+                </div>
+            </div>
+        </section>
+        <section id="partners">
+            <div class="container">
+                <div class="title">
+                    <div class="hero-text">Partners</div>
+                    <div class="sub-text">Collaborating for a better future</div>
+                </div>
+            </div>
+        </section-->
+        <!--add content upto here-->
+        <script src="./resources/js/particles.js" charset="utf-8"></script>
+        <script src="./resources/js/script.js "></script>
+        <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js "></script>
+
+    </body>
+
+    </div>
+    <!--//page wrapper-->
+
+    <!--footer-->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <img src="./resources/images/GoogleDevelopers.png" alt="Google Developers" width="200" height="28">
+                <div class="socials">
+                    <a href="https://facebook.com/dsckgec">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                    <!--icons to be updated-->
+                    <a href="https://instagram.com/dsckgec">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                    <a href="https://twitter.com/dsckgec">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                    <a href="https://www.linkedin.com/company/dsckgec">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UChIuhjS8Kny2wc7mZrVjSuQ">
+                        <ion-icon name="logo-youtube"></ion-icon>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h2> Quick Links </h2>
+                <br>
+                <u1 style="list-style: square; padding-left: 15px;">
+                    <a href="#">
+                        <li>Chapters</li>
+                    </a>
+                    <a href="#">
+                        <li>Upcoming Events</li>
+                    </a>
+                    <a href="#">
+                        <li>About DSC KGEC</li>
+                    </a>
+                    <a href="codeOfConduct.html">
+                        <li>Code Of Conduct</li>
+                    </a>
+                    <a href="#">
+                        <li>Privacy</li>
+                    </a>
+                    <a href="#">
+                        <li>Terms</li>
+                    </a>
+                </u1>
+            </div>
+            <div class="footer-section links">
+                <h2> Latest Projects </h2>
+                <br>
+                <u1 style="list-style: square; padding-left: 15px;">
+                    <a href="#">
+                        <li>Chapters</li>
+                    </a>
+                    <a href="#">
+                        <li>Upcoming Events</li>
+                    </a>
+                    <a href="#">
+                        <li>About DSC KGEC</li>
+                    </a>
+                    <a href="codeOfConduct.html">
+                        <li>Code Of Conduct</li>
+                    </a>
+                    <a href="#">
+                        <li>Privacy</li>
+                    </a>
+                    <a href="#">
+                        <li>Terms</li>
+                    </a>
+                </u1>
+            </div>
+        </div>
+        <div class="footer-bottom">&copy; Copyright 2020 Developer Student Clubs | Designed by DSC KGEC</div>
+        <!--footer-->
+
+</html>

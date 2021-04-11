@@ -1,0 +1,72 @@
+body {
+    background-color: #FFF;
+    color: #202124;
+}
+
+a,
+a:active,
+a:visited,
+a:hover {
+    color: #202124;
+}
+
+nav {
+    background: #F8F8FA;
+    border-right: 1px solid #e4e4ec;
+}
+
+.side-nav {
+    background-color: #F8F8FA;
+    border-right: 1px solid #e4e4ec;
+}
+
+.btn {
+    color: #6C7D8B;
+    background-color: #F8F8FA;
+}
+
+.active,
+.light {
+    font-size: 18px;
+    color: #FFF;
+    background-color: #4285F4;
+}
+
+nav .buttons {
+    border-top: 1px solid #e4e4ec;
+}
+
+.logo-img {
+    background-image: url('../images/logo-dsc.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.button {
+    box-shadow: 0 14px 26px -12px rgba(138, 119, 119, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(153, 153, 153, 0.2);
+    color: #FFF !important;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background: #fff;
+    color: black;
+}
+
+.footer .footer-content h2 {
+    color: rgb(61, 58, 58);
+}
+
+.footer .footer-content .about .socials a:hover,
+.footer .footer-content .links a:hover {
+    color: #6C7D8B;
+    transition: all.4s;
+}
+
+.footer-bottom {
+    background: rgb(244, 247, 250);
+    color: rgb(29, 29, 29);
+    text-align: center;
+}

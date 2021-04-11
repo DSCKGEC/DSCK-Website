@@ -1,0 +1,119 @@
+body {
+    background-color: #282A36;
+    color: #fff;
+}
+
+a,
+a:active,
+a:visited,
+a:hover {
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    background: repeating-linear-gradient(rgb(255, 52, 52), rgb(39, 39, 117), rgb(62, 241, 62), rgb(253, 253, 60));
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(204, 200, 200);
+    border: cornsilk;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #484849;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #484849;
+}
+
+nav {
+    background: #20222b;
+    border-right: 1px solid #3e4046;
+}
+
+.side-nav {
+    background-color: #20222b;
+}
+
+.btn {
+    color: #dfdedb;
+    background-color: #20222b;
+}
+
+.active,
+.dark {
+    font-size: 18px;
+    color: #000;
+    background-color: #4285F4;
+}
+
+nav .buttons {
+    border-top: 1px solid #3e4046;
+}
+
+.logo-img {
+    background-image: url('../images/logo-black.png');
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    min-height: 700px;
+    background-image: url('../images/dark-header-background.png');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-main {
+    height: 60px;
+    position: absolute;
+    top: 45px;
+    left: 120px;
+}
+
+.button {
+    box-shadow: 0 14px 26px -12px rgba(0, 0, 0, 0.014) 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+#about {
+    background-color: #282A36;
+}
+
+.sub-text {
+    color: #56d899;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background: #282A36;
+    color: #fff;
+}
+
+.footer .footer-content h2 {
+    color: rgb(204, 200, 200);
+}
+
+.footer .footer-content .about .socials a:hover,
+.footer .footer-content .links a:hover {
+    color: #bdb9b5;
+    transition: all.4s;
+}
+
+.footer-bottom {
+    background: #282a36e5;
+    color: rgb(204, 200, 200);
+    text-align: center;
+}
