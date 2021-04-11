@@ -39,7 +39,12 @@ const Layout: React.FC<any> = (props) => {
     <React.Fragment>
       <Navbar></Navbar>
       <div className="router-container" ref={routerContainer}>
-        {renderRoutes(route.routes)}
+      <Switch>
+          <Route exact path="/home" component={Home} />
+          <Route exact path="/team" component={Team} />
+          <Route exact path="/contact" component={Contact} />
+          <Redirect to="/home" />
+        </Switch>
       </div>
       <Socials percent={scrollHeight}></Socials>
     </React.Fragment>
