@@ -49,6 +49,7 @@ const Team: React.FC = () => {
       </div>
       <div className="wide-cont-wrap">
     <section id="team">
+        {/* <h1>Nothing</h1> */}
       <div id="center-text"><h1>Tech Leads</h1></div>
       <div className="team-cards">
         <div className="tm-container">
