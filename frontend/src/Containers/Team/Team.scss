@@ -267,6 +267,7 @@
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.95);
     width: 150px;
     margin-bottom: 10px; 
+    object-fit: cover;
   }
   @media all and (max-width:768px) {
       .wide-cont-wrap {
@@ -274,12 +275,19 @@
     }
     .tm-container img{
         width: 100px;
+        height: 100px;
+        object-fit: cover;
     }
   }
   @media all and (min-width: 768px) {
     .tm-container {
       margin: 20px;
     }
+    .tm-container img{
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+  }
   }
   @media all and (min-width: 1200px) {
     .tm-container {
@@ -287,6 +295,8 @@
     }
     .tm-container img{
         width:150px;
+        height: 150px;
+        object-fit: cover;
     }
   }
   
@@ -346,3 +356,9 @@
   ul li:nth-child(5) a:hover .fa {
     color: #e4405f;
   }
+.img-team
+{
+  height: 100%;
+  width: 100%;
+  position: relative;;
+}
